@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProdArt</title>
-    <!-- iconos-->
+  <meta charset="UTF-8">
+  <title>compra del articulo</title>
+  <link rel="stylesheet" href="estilos.css">
+  <!-- iconos-->
     <link rel="apple-touch-icon" href="assets/img/">
     <!-- css-->
      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -14,7 +14,7 @@
 </head>
 <body>
     <!-- inicio encabezado-->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-light" id="templatemo_nav_top">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-light" id="templatemo_nav_top">
             <div class="container text-light">
                 <div class="w-100 d-flex justify-content-between">
                     <div>
@@ -32,13 +32,13 @@
     
             </div>
         </nav>
-    <!-- fin encabezado-->
-    <!-- inicio menu-->
-     <nav class="navbar navbar-expand-lg navbar-light shadow">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="container d-flex justify-content-between align-items-center">
+        <!-- fin encabezado-->
+        <!-- inicio menu-->
+         <nav class="navbar navbar-expand-lg navbar-light shadow">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="container d-flex justify-content-between align-items-center">
                 <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
                     JC TECHNOLOGY
                 </a>
@@ -59,17 +59,28 @@
                     </ul>
                 </div>
             </div>
+    
+         </nav>
+    <!-- fin menu-->
+  <h1>Producto Destacado</h1>
+  <div class="producto">
+    <img src="omen.jpg" alt="Producto Ejemplo" style="width:300px;">
+    <h2>Nombre del Producto</h2>
+    <p>Descripción breve del producto aquí.</p>
+    <p><strong>Precio:</strong> $10.150.000</p>
 
-     </nav>
-<!-- fin menu-->
-
-
-    <!-- inicio secciones-->
+    <form action="comprar.html" method="post">
+      <label for="cantidad">Cantidad:</label>
+      <input type="number" id="cantidad" name="cantidad" min="1" value="1" required>
+      <input type="hidden" name="producto" value="Nombre del Producto">
+      <button onclick="MostrarMsn()"> Comprar</button>
+    </form>
+  </div>
+  <!-- inicio secciones-->
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
      <!-- fin secciones-->
-
-    <!-- inicio de pie-->
+  <!-- inicio de pie-->
     <footer class="bg-dark" id="templatemo_footer">
         <div class="container">
             <div class="row">
@@ -154,6 +165,10 @@
     <!-- fin de pie-->
     <!-- archivos js-->
      <script src="assets/js/bootstrap.bundle.min.js"></script>
-
+     <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+     <script src="assets/js/jquery-1.11.0.min.js"></script>
+     <script src="assets/js/templatemo.js"></script>
+     <script src="assets/js/custom.js"></script>
 </body>
+<script src="script.js"></script>
 </html>
